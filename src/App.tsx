@@ -1,3 +1,5 @@
+import { Editor } from "./components/Editor";
+
 function App() {
   return (
     <div className="min-h-screen p-8 text-zinc-900 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
@@ -10,21 +12,7 @@ function App() {
           </div>
         </aside>
         <main className="p-4">
-          <div className="max-w-[700px] mx-auto pt-16 prose prose-violet">
-            <h1>As Vantagens do Tailwind CSS</h1>
-            <ul>
-              <li>Controle total sobre o estilo</li>
-              <li>Processo de estilização rápido</li>
-              <li>Responsividade e segurança</li>
-              <li>Recursos adicionais</li>
-            </ul>
-            <blockquote>
-              "O Tailwind CSS é uma ferramenta poderosa para desenvolvedores
-              front-end. Sua abordagem pragmática e modular permite criar
-              interfaces incríveis com rapidez."
-            </blockquote>
-            <p>Você pode aprender mais sobre Tailwindcss na <a href="https://rocketseat.com.br">rocketseat.com.br</a></p>
-          </div>
+          <Editor />
         </main>
       </div>
     </div>
