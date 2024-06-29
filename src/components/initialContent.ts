@@ -6,6 +6,7 @@ export const initialContent = `
     <li>Responsividade e segurança</li>
     <li>Recursos adicionais</li>
 </ul>
+<pre><code class="language-javascript">console.log("Hello, Tailwind CSS!");</code></pre>
 <blockquote>
 "O Tailwind CSS é uma ferramenta poderosa para desenvolvedores
 front-end. Sua abordagem pragmática e modular permite criar interfaces
