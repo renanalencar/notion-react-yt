@@ -9,8 +9,11 @@ import {
   RxFontItalic,
   RxStrikethrough,
   RxCode,
+  RxChevronDown,
+  RxChatBubble,
 } from "react-icons/rx";
 import "highlight.js/styles/tokyo-night-dark.css";
+import { BubbleButton } from "./BubbleButton";
 
 const lowlight = createLowlight(common);
 
@@ -42,18 +45,28 @@ export function Editor() {
           className="bg-white shadow-xl border border-zinc-100 shadow-black/20 rounded-lg overflow-hidden flex divide-x divide-zinc-100"
           editor={editor}
         >
-          <button className="p-2 text-zinc-900 text-sm flex items-center gap-1.5 font-medium leading-none hover:bg-zinc-100">
-            <RxFontBold className="w-4 h-4" />
-          </button>
-          <button className="p-2 text-zinc-900 text-sm flex items-center gap-1.5 font-medium leading-none hover:bg-zinc-100">
-            <RxFontItalic className="w-4 h-4" />
-          </button>
-          <button className="p-2 text-zinc-900 text-sm flex items-center gap-1.5 font-medium leading-none hover:bg-zinc-100">
-            <RxStrikethrough className="w-4 h-4" />
-          </button>
-          <button className="p-2 text-zinc-900 text-sm flex items-center gap-1.5 font-medium leading-none hover:bg-zinc-100">
-            <RxCode className="w-4 h-4" />
-          </button>
+            <BubbleButton>
+                Text
+                <RxChevronDown className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+                <RxChatBubble className="w-4 h-4" />
+                Comment
+            </BubbleButton>
+          <div className="flex items-center">
+            <BubbleButton>
+              <RxFontBold className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxFontItalic className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxStrikethrough className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxCode className="w-4 h-4" />
+            </BubbleButton>
+          </div>
         </BubbleMenu>
       )}
     </>
