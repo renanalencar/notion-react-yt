@@ -13,7 +13,7 @@ Hoje você vai poder ver na prática como criar um projeto clone do Notion utili
 
 ## Referência
 
- - [Como sair do ZERO em Node.js em apenas UMA aula](https://youtu.be/hHM-hr9q4mo?si=EK4cMvb83kg7NzD9)
+ - [Recriando o Notion com React (editor funcionando!)](https://www.youtube.com/live/-SDxID3BS4I?si=and59TTF1yf6jRvV)
  - [Hypercolor](https://hypercolor.dev/)
  - [CodeBlockLowlight extension](https://tiptap.dev/docs/editor/extensions/nodes/code-block-lowlight)
  - [lowlight](https://www.npmjs.com/package/lowlight)
