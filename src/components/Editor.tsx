@@ -45,25 +45,37 @@ export function Editor() {
           className="bg-white shadow-xl border border-zinc-100 shadow-black/20 rounded-lg overflow-hidden flex divide-x divide-zinc-100"
           editor={editor}
         >
-            <BubbleButton>
-                Text
-                <RxChevronDown className="w-4 h-4" />
-            </BubbleButton>
-            <BubbleButton>
-                <RxChatBubble className="w-4 h-4" />
-                Comment
-            </BubbleButton>
+          <BubbleButton>
+            Text
+            <RxChevronDown className="w-4 h-4" />
+          </BubbleButton>
+          <BubbleButton>
+            <RxChatBubble className="w-4 h-4" />
+            Comment
+          </BubbleButton>
           <div className="flex items-center">
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleBold().run()}
+              data-active={editor.isActive("bold")}
+            >
               <RxFontBold className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleItalic().run()}
+              data-active={editor.isActive("italic")}
+            >
               <RxFontItalic className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleStrike().run()}
+              data-active={editor.isActive("strike")}
+            >
               <RxStrikethrough className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleCode().run()}
+              data-active={editor.isActive("code")}
+            >
               <RxCode className="w-4 h-4" />
             </BubbleButton>
           </div>
